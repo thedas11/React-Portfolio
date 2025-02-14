@@ -1,11 +1,14 @@
 import './App.css'
 import AboutMeMain from './components/aboutMeSection/AboutMeMain'
+import ContactMeMain from './components/contactMeSection.jsx/ContactMeMain'
 import ExperienceMain from './components/experienceSection/ExperienceMain'
+import FooterMain from './components/footer/FooterMain'
 import HelperSection from './components/HelperSection'
 import HeroGradient from './components/heroSection/HeroGradient'
 import HeroMain from './components/heroSection/HeroMain'
 import SubHerosection from './components/heroSection/SubHerosection'
 import Navbarmain from './components/navbar/Navbarmain'
+import ProjectsMain from './components/projectsSection/ProjectsMain'
 import SkillsMain from './components/skillsSection/SkillsMain'
 import SubSkills from './components/skillsSection/SubSkills'
 const App =()=>{
@@ -19,8 +22,9 @@ const App =()=>{
       <SkillsMain/>
       <SubSkills/>
       <ExperienceMain/>
-
-      <HelperSection/>
+      <ProjectsMain/>
+      <ContactMeMain/>
+      <FooterMain/>
        </main>
   )
 }

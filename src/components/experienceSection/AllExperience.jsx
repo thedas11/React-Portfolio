@@ -1,5 +1,7 @@
 import React from 'react'
 import SingleExperience from './SingleExperience'
+import {motion} from "framer-motion";
+import { fadeIn } from "../../framer-motion/variants";
 
 
 
@@ -22,7 +24,10 @@ const AllExperience = () => {
   return (
     <div className='flex justify-center'>
       {experiences.map((experience,index)=>{
-        return <SingleExperience key={index} experience={experience} />
+        return <motion.div variants={fadeIn("up", 0.5)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0 }}><SingleExperience key={index} experience={experience} /> </motion.div>
       })}
     </div>
   )

@@ -1,3 +1,6 @@
+import {motion} from "framer-motion";
+import { fadeIn } from "../../framer-motion/variants";
+
 const ExperienceInfo = ({ number, text }) => {
     return (
       <div className="flex flex-col justify-center items-center">
